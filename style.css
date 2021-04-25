@@ -561,4 +561,7 @@ p {
   .card-info {
     width: 90%;
   }
+  .status h1 {
+    font-size: 2rem;
+  }
 }
