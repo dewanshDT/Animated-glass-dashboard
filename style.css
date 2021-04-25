@@ -123,6 +123,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background-color: #f37335;
+}
+
 .icon img {
   max-width: 3rem;
 }
@@ -258,8 +262,7 @@ p {
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  border-radius: 2rem;
 }
 
 .user {
@@ -463,5 +466,99 @@ p {
   }
   to {
     transform: translate(-3rem, 10rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .glass {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .dashboard {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .user {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .pro {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    width: 92%;
+  }
+
+  .pro img {
+    display: none;
+  }
+
+  .link {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .games {
+    flex-grow: 9;
+    overflow-y: auto;
+    height: 80%;
+  }
+}
+
+@media (max-width: 850px) {
+  .glass {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .dashboard {
+    border-radius: 0px;
+  }
+  .links {
+    flex-wrap: wrap;
+  }
+  .link svg {
+    width: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .link h2 {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .pro h2 {
+    font-size: 1rem;
+  }
+
+  .games {
+    overflow-y: auto;
+    height: 80%;
+  }
+  .card {
+    flex-wrap: wrap;
+  }
+  .percentage {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .link h2 {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .link svg {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .card-info {
+    width: 90%;
   }
 }
