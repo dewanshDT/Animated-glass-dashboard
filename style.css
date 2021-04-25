@@ -444,13 +444,31 @@ p {
   overflow: hidden;
 }
 
-.progress::after {
+.progress1::after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   background: #eeeeee;
   left: 60%;
+}
+
+.progress2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #eeeeee;
+  left: 40%;
+}
+
+.progress3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #eeeeee;
+  left: 90%;
 }
 
 /* content block */
